@@ -11,9 +11,9 @@ body {
 }
 
 a {
-  transition: all .3s;
-  -webkit-transition: all .3s;
-  -o-transition: all .3s;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
 }
 
 h1,
@@ -51,7 +51,6 @@ ol {
   height: 50px;
 }
 
-
 .navbar .navbar-brand {
   letter-spacing: 0.05rem;
   font-weight: 500;
@@ -70,6 +69,10 @@ ol {
   background-color: rgba(0, 0, 0, 0.25);
 }
 
+.card {
+  margin-bottom: 15px;
+}
+
 .card .card-header h4 {
   line-height: 24px;
 }
@@ -78,11 +81,20 @@ ol {
   padding: 10px 20px;
 }
 
-.nav-pills .nav-item .nav-link {
-  padding: 0.5rem
+.card .rounded-circle {
+  width: 60px;
+  margin: 0;
 }
 
-.tab-content>.tab-pane {
+.card.card-custom .card-body {
+  padding-bottom: 5px;
+}
+
+.nav-pills .nav-item .nav-link {
+  padding: 0.5rem;
+}
+
+.tab-content > .tab-pane {
   line-height: 24px;
 }
 

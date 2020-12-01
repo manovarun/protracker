@@ -40,10 +40,6 @@
                   <span class="d-sm-none d-lg-inline-block"></span
                 ></a>
                 <div class="dropdown-menu dropdown-menu-right">
-                  <a href="" class="dropdown-item has-icon">
-                    <i class="fas fa-cog"></i> Settings
-                  </a>
-                  <div class="dropdown-divider"></div>
                   <a href="#!" class="dropdown-item has-icon text-danger">
                     <i class="fas fa-sign-out-alt"></i> Logout
                   </a>
@@ -57,12 +53,16 @@
           <section class="section pt-3">
             <div class="section-body">
               <div class="col-md-6">
-                <div class="card card-success">
+                <div class="card">
                   <div class="card-header">
-                    <h4>Productive Hours</h4>
+                    <h4 class="text-dark">Productive Hours</h4>
                   </div>
                   <div class="card-body">
-                    <ul class="nav nav-pills mb-2" id="myTab3" role="tablist">
+                    <ul
+                      class="nav nav-pills nav-justified mb-2"
+                      id="myTab3"
+                      role="tablist"
+                    >
                       <li class="nav-item">
                         <a
                           class="nav-link active text-uppercase"
@@ -102,147 +102,205 @@
                     </ul>
                     <div class="tab-content" id="myTabContent2">
                       <div
-                        class="tab-pane fade show active"
+                        class="tab-pane fade show active pb-0"
                         id="home3"
                         role="tabpanel"
                         aria-labelledby="home-tab3"
                       >
-                        <h6 class="text-danger">Quality</h6>
-                        <div class="m-b-15">
-                          <div
-                            class="text-small float-right font-weight-bold text-dark"
-                          >
-                            1,645
-                          </div>
-                          <div class="font-weight-bold">Actual</div>
-                          <div class="progress" data-height="15">
-                            <div
-                              class="progress-bar l-bg-purple"
-                              role="progressbar"
-                              data-width="60%"
-                              aria-valuenow="1675"
-                              aria-valuemin="0"
-                              aria-valuemax="2675"
-                            >
-                              60%
+                        <div class="card card-success card-custom">
+                          <div class="card-body">
+                            <h6 class="text-success">Quality</h6>
+                            <div class="row align-items-center">
+                              <div class="col-2">
+                                <div class="card rounded-circle text-center">
+                                  <div
+                                    class="card-body p-3 text-dark text-center"
+                                  >
+                                    60%
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-10">
+                                <div class="m-b-15">
+                                  <div
+                                    class="text-small float-right font-weight-bold text-dark"
+                                  >
+                                    1,645
+                                  </div>
+                                  <div class="font-weight-bold">Actual</div>
+                                  <div class="progress" data-height="15">
+                                    <div
+                                      class="progress-bar l-bg-purple"
+                                      role="progressbar"
+                                      data-width="60%"
+                                      aria-valuenow="1675"
+                                      aria-valuemin="0"
+                                      aria-valuemax="2675"
+                                    >
+                                      60%
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="m-b-15">
+                                  <div
+                                    class="text-small float-right font-weight-bold text-dark"
+                                  >
+                                    2,675
+                                  </div>
+                                  <div class="font-weight-bold">Target</div>
+                                  <div
+                                    class="progress progress-striped mt-1"
+                                    data-height="15"
+                                  >
+                                    <div
+                                      class="progress-bar l-bg-green"
+                                      role="progressbar"
+                                      data-width="100%"
+                                      aria-valuenow="25"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                    >
+                                      100%
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
-                        <div class="m-b-15">
-                          <div
-                            class="text-small float-right font-weight-bold text-dark"
-                          >
-                            2,675
-                          </div>
-                          <div class="font-weight-bold">Target</div>
-                          <div
-                            class="progress progress-striped mt-1"
-                            data-height="15"
-                          >
-                            <div
-                              class="progress-bar l-bg-green"
-                              role="progressbar"
-                              data-width="100%"
-                              aria-valuenow="25"
-                              aria-valuemin="0"
-                              aria-valuemax="100"
-                            >
-                              100%
+
+                        <div class="card card-danger card-custom">
+                          <div class="card-body">
+                            <h6 class="text-danger">Production</h6>
+                            <div class="row align-items-center">
+                              <div class="col-2">
+                                <div class="card rounded-circle text-center">
+                                  <div
+                                    class="card-body p-3 text-dark text-center"
+                                  >
+                                    72%
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-10">
+                                <div class="m-b-15">
+                                  <div
+                                    class="text-small float-right font-weight-bold text-dark"
+                                  >
+                                    1,845
+                                  </div>
+                                  <div class="font-weight-bold">Actual</div>
+                                  <div class="progress" data-height="15">
+                                    <div
+                                      class="progress-bar l-bg-purple"
+                                      role="progressbar"
+                                      data-width="72%"
+                                      aria-valuenow="1675"
+                                      aria-valuemin="0"
+                                      aria-valuemax="2675"
+                                    >
+                                      72%
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="m-b-15">
+                                  <div
+                                    class="text-small float-right font-weight-bold text-dark"
+                                  >
+                                    2,675
+                                  </div>
+                                  <div class="font-weight-bold">Target</div>
+                                  <div
+                                    class="progress progress-striped mt-1"
+                                    data-height="15"
+                                  >
+                                    <div
+                                      class="progress-bar l-bg-green"
+                                      role="progressbar"
+                                      data-width="100%"
+                                      aria-valuenow="25"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                    >
+                                      100%
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
-                        <hr />
-                        <h6 class="text-success">Production</h6>
-                        <div class="m-b-15">
-                          <div
-                            class="text-small float-right font-weight-bold text-dark"
-                          >
-                            1,845
-                          </div>
-                          <div class="font-weight-bold">Actual</div>
-                          <div class="progress" data-height="15">
-                            <div
-                              class="progress-bar l-bg-purple"
-                              role="progressbar"
-                              data-width="72%"
-                              aria-valuenow="1675"
-                              aria-valuemin="0"
-                              aria-valuemax="2675"
-                            >
-                              72%
+
+                        <div class="card card-info card-custom">
+                          <div class="card-body">
+                            <h6 class="text-info">Attendence</h6>
+                            <div class="row align-items-center">
+                              <div class="col-2">
+                                <div class="card rounded-circle text-center">
+                                  <div
+                                    class="card-body p-3 text-dark text-center"
+                                  >
+                                    40%
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-10">
+                                <div class="m-b-15">
+                                  <div
+                                    class="text-small float-right font-weight-bold text-dark"
+                                  >
+                                    620
+                                  </div>
+                                  <div class="font-weight-bold">Actual</div>
+                                  <div class="progress" data-height="15">
+                                    <div
+                                      class="progress-bar l-bg-purple"
+                                      role="progressbar"
+                                      data-width="40%"
+                                      aria-valuenow="1675"
+                                      aria-valuemin="0"
+                                      aria-valuemax="2675"
+                                    >
+                                      40%
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="m-b-15">
+                                  <div
+                                    class="text-small float-right font-weight-bold text-dark"
+                                  >
+                                    2,675
+                                  </div>
+                                  <div class="font-weight-bold">Target</div>
+                                  <div
+                                    class="progress progress-striped mt-1"
+                                    data-height="15"
+                                  >
+                                    <div
+                                      class="progress-bar l-bg-green"
+                                      role="progressbar"
+                                      data-width="100%"
+                                      aria-valuenow="25"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                    >
+                                      100%
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
-                          </div>
-                        </div>
-                        <div class="m-b-15">
-                          <div
-                            class="text-small float-right font-weight-bold text-dark"
-                          >
-                            2,675
-                          </div>
-                          <div class="font-weight-bold">Target</div>
-                          <div
-                            class="progress progress-striped mt-1"
-                            data-height="15"
-                          >
-                            <div
-                              class="progress-bar l-bg-green"
-                              role="progressbar"
-                              data-width="100%"
-                              aria-valuenow="25"
-                              aria-valuemin="0"
-                              aria-valuemax="100"
-                            >
-                              100%
-                            </div>
-                          </div>
-                        </div>
-                        <hr />
-                        <h6 class="text-warning">Attendence</h6>
-                        <div class="m-b-15">
-                          <div
-                            class="text-small float-right font-weight-bold text-dark"
-                          >
-                            2,000
-                          </div>
-                          <div class="font-weight-bold">Actual</div>
-                          <div class="progress" data-height="10">
-                            <div
-                              class="progress-bar l-bg-purple"
-                              role="progressbar"
-                              data-width="90%"
-                              aria-valuenow="1675"
-                              aria-valuemin="0"
-                              aria-valuemax="2675"
-                            ></div>
-                          </div>
-                        </div>
-                        <div class="m-b-15">
-                          <div
-                            class="text-small float-right font-weight-bold text-dark"
-                          >
-                            2,675
-                          </div>
-                          <div class="font-weight-bold">Target</div>
-                          <div class="progress mt-1" data-height="10">
-                            <div
-                              class="progress-bar l-bg-green"
-                              role="progressbar"
-                              data-width="100%"
-                              aria-valuenow="25"
-                              aria-valuemin="0"
-                              aria-valuemax="100"
-                            ></div>
                           </div>
                         </div>
                       </div>
                       <div
-                        class="tab-pane fade"
+                        class="tab-pane fade pb-0"
                         id="profile3"
                         role="tabpanel"
                         aria-labelledby="profile-tab3"
                       ></div>
                       <div
-                        class="tab-pane fade"
+                        class="tab-pane fade pb-0"
                         id="contact3"
                         role="tabpanel"
                         aria-labelledby="contact-tab3"
