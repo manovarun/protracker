@@ -90,6 +90,17 @@ ol {
   padding-bottom: 1.25rem;
 }
 
+.tab-content-knob .card .card-body {
+  padding: 10px;
+}
+
+.tab-content-knob .card {
+  margin-bottom: 15px;
+}
+
+.tab-content-knob [class*="col-md-"] {
+  padding: 0 10px;
+}
 .nav-pills .nav-item .nav-link {
   padding: 0.5rem 1.25rem !important;
 }
