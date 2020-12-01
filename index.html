@@ -52,177 +52,157 @@
         <div class="main-content">
           <section class="section pt-3">
             <div class="section-body">
-              <div class="col-md-6">
-                <div class="card">
-                  <div class="card-header">
-                    <h4 class="text-dark">Productive Hours</h4>
-                  </div>
-                  <div class="card-body">
-                    <ul
-                      class="nav nav-pills nav-justified mb-2"
-                      id="myTab3"
-                      role="tablist"
-                    >
-                      <li class="nav-item">
-                        <a
-                          class="nav-link active text-uppercase"
-                          id="home-tab3"
-                          data-toggle="tab"
-                          href="#home3"
-                          role="tab"
-                          aria-controls="home"
-                          aria-selected="true"
-                          >Monthly</a
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="card">
+                    <div class="card-header">
+                      <h4 class="text-dark">Productive Hours</h4>
+                      <div class="card-header-action">
+                        <ul
+                          class="nav nav-pills mb-0"
+                          id="productive-hours-tab"
+                          role="tablist"
                         >
-                      </li>
-                      <li class="nav-item">
-                        <a
-                          class="nav-link text-uppercase"
-                          id="profile-tab3"
-                          data-toggle="tab"
-                          href="#profile3"
-                          role="tab"
-                          aria-controls="profile"
-                          aria-selected="false"
-                          >Weekly</a
+                          <li class="nav-item">
+                            <a
+                              class="nav-link active text-uppercase"
+                              id="monthly-tab"
+                              data-toggle="tab"
+                              href="#monthly-tab-pane"
+                              role="tab"
+                              aria-controls="monthly-tab-pane"
+                              aria-selected="true"
+                              >Monthly</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a
+                              class="nav-link text-uppercase"
+                              id="weekly-tab"
+                              data-toggle="tab"
+                              href="#weekly-tab-pane"
+                              role="tab"
+                              aria-controls="weekly-tab-pane"
+                              aria-selected="false"
+                              >Weekly</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a
+                              class="nav-link text-uppercase"
+                              id="daily-tab"
+                              data-toggle="tab"
+                              href="#daily-tab-pane"
+                              role="tab"
+                              aria-controls="daily-tab-pane"
+                              aria-selected="false"
+                              >Daily</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="card-body pb-0">
+                      <div class="tab-content">
+                        <div
+                          class="tab-pane fade show active pb-0"
+                          id="monthly-tab-pane"
+                          role="tabpanel"
+                          aria-labelledby="monthly-tab-pane"
                         >
-                      </li>
-                      <li class="nav-item">
-                        <a
-                          class="nav-link text-uppercase"
-                          id="contact-tab3"
-                          data-toggle="tab"
-                          href="#contact3"
-                          role="tab"
-                          aria-controls="contact"
-                          aria-selected="false"
-                          >Daily</a
-                        >
-                      </li>
-                    </ul>
-                    <div class="tab-content" id="myTabContent2">
-                      <div
-                        class="tab-pane fade show active pb-0"
-                        id="home3"
-                        role="tabpanel"
-                        aria-labelledby="home-tab3"
-                      >
-                        <div class="card card-success card-custom">
-                          <div class="card-body">
-                            <h6 class="text-success">Quality</h6>
-                            <div class="row align-items-center">
-                              <div class="col-2">
-                                <div class="card rounded-circle text-center">
-                                  <div
-                                    class="card-body p-3 text-dark text-center"
-                                  >
-                                    60%
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="col-10">
-                                <div class="m-b-15">
-                                  <div
-                                    class="text-small float-right font-weight-bold text-dark"
-                                  >
-                                    1,645
-                                  </div>
-                                  <div class="font-weight-bold">Actual</div>
-                                  <div class="progress" data-height="15">
+                          <div class="card card-success card-custom">
+                            <div class="card-body">
+                              <h6 class="text-success">Quality</h6>
+                              <div class="row align-items-center">
+                                <div class="col-2">
+                                  <div class="card rounded-circle text-center">
                                     <div
-                                      class="progress-bar l-bg-purple"
-                                      role="progressbar"
-                                      data-width="60%"
-                                      aria-valuenow="1675"
-                                      aria-valuemin="0"
-                                      aria-valuemax="2675"
+                                      class="card-body p-3 text-dark text-center"
                                     >
                                       60%
                                     </div>
                                   </div>
                                 </div>
-                                <div class="m-b-15">
-                                  <div
-                                    class="text-small float-right font-weight-bold text-dark"
-                                  >
-                                    2,675
-                                  </div>
-                                  <div class="font-weight-bold">Target</div>
-                                  <div
-                                    class="progress progress-striped mt-1"
-                                    data-height="15"
-                                  >
+                                <div class="col-10">
+                                  <div class="m-b-15">
                                     <div
-                                      class="progress-bar l-bg-green"
-                                      role="progressbar"
-                                      data-width="100%"
-                                      aria-valuenow="25"
-                                      aria-valuemin="0"
-                                      aria-valuemax="100"
+                                      class="progress progress-striped mt-1"
+                                      data-height="15"
                                     >
-                                      100%
+                                      <div
+                                        class="progress-bar l-bg-green"
+                                        role="progressbar"
+                                        data-width="60%"
+                                        aria-valuenow="60"
+                                        aria-valuemin="0"
+                                        aria-valuemax="100"
+                                      >
+                                        60%
+                                      </div>
                                     </div>
                                   </div>
                                 </div>
                               </div>
                             </div>
                           </div>
-                        </div>
-
-                        <div class="card card-danger card-custom">
-                          <div class="card-body">
-                            <h6 class="text-danger">Production</h6>
-                            <div class="row align-items-center">
-                              <div class="col-2">
-                                <div class="card rounded-circle text-center">
-                                  <div
-                                    class="card-body p-3 text-dark text-center"
-                                  >
-                                    72%
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="col-10">
-                                <div class="m-b-15">
-                                  <div
-                                    class="text-small float-right font-weight-bold text-dark"
-                                  >
-                                    1,845
-                                  </div>
-                                  <div class="font-weight-bold">Actual</div>
-                                  <div class="progress" data-height="15">
+                          <div class="card card-danger card-custom">
+                            <div class="card-body">
+                              <h6 class="text-danger">Production</h6>
+                              <div class="row align-items-center">
+                                <div class="col-2">
+                                  <div class="card rounded-circle text-center">
                                     <div
-                                      class="progress-bar l-bg-purple"
-                                      role="progressbar"
-                                      data-width="72%"
-                                      aria-valuenow="1675"
-                                      aria-valuemin="0"
-                                      aria-valuemax="2675"
+                                      class="card-body p-3 text-dark text-center"
                                     >
                                       72%
                                     </div>
                                   </div>
                                 </div>
-                                <div class="m-b-15">
-                                  <div
-                                    class="text-small float-right font-weight-bold text-dark"
-                                  >
-                                    2,675
+                                <div class="col-10">
+                                  <div class="m-b-15">
+                                    <div class="progress" data-height="15">
+                                      <div
+                                        class="progress-bar l-bg-red"
+                                        role="progressbar"
+                                        data-width="72%"
+                                        aria-valuenow="72"
+                                        aria-valuemin="0"
+                                        aria-valuemax="100"
+                                      >
+                                        72%
+                                      </div>
+                                    </div>
                                   </div>
-                                  <div class="font-weight-bold">Target</div>
-                                  <div
-                                    class="progress progress-striped mt-1"
-                                    data-height="15"
-                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card card-info card-custom">
+                            <div class="card-body">
+                              <h6 class="text-info">Attendence</h6>
+                              <div class="row align-items-center">
+                                <div class="col-2">
+                                  <div class="card rounded-circle text-center">
                                     <div
-                                      class="progress-bar l-bg-green"
-                                      role="progressbar"
-                                      data-width="100%"
-                                      aria-valuenow="25"
-                                      aria-valuemin="0"
-                                      aria-valuemax="100"
+                                      class="card-body p-3 text-dark text-center"
                                     >
-                                      100%
+                                      90%
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-10">
+                                  <div class="m-b-15">
+                                    <div class="progress" data-height="15">
+                                      <div
+                                        class="progress-bar l-bg-cyan"
+                                        role="progressbar"
+                                        data-width="90%"
+                                        aria-valuenow="90"
+                                        aria-valuemin="0"
+                                        aria-valuemax="100"
+                                      >
+                                        40%
+                                      </div>
                                     </div>
                                   </div>
                                 </div>
@@ -230,61 +210,383 @@
                             </div>
                           </div>
                         </div>
-
-                        <div class="card card-info card-custom">
-                          <div class="card-body">
-                            <h6 class="text-info">Attendence</h6>
-                            <div class="row align-items-center">
-                              <div class="col-2">
-                                <div class="card rounded-circle text-center">
-                                  <div
-                                    class="card-body p-3 text-dark text-center"
-                                  >
-                                    40%
+                        <div
+                          class="tab-pane fade pb-0"
+                          id="weekly-tab-pane"
+                          role="tabpanel"
+                          aria-labelledby="weekly-tab-pane"
+                        >
+                          <div class="card card-success card-custom">
+                            <div class="card-body">
+                              <h6 class="text-success">Quality</h6>
+                              <div class="row align-items-center">
+                                <div class="col-2">
+                                  <div class="card rounded-circle text-center">
+                                    <div
+                                      class="card-body p-3 text-dark text-center"
+                                    >
+                                      60%
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-10">
+                                  <div class="m-b-15">
+                                    <div
+                                      class="text-small float-right font-weight-bold text-dark"
+                                    >
+                                      1,645
+                                    </div>
+                                    <div class="font-weight-bold">Actual</div>
+                                    <div class="progress" data-height="15">
+                                      <div
+                                        class="progress-bar l-bg-purple"
+                                        role="progressbar"
+                                        data-width="60%"
+                                        aria-valuenow="1675"
+                                        aria-valuemin="0"
+                                        aria-valuemax="2675"
+                                      >
+                                        60%
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="m-b-15">
+                                    <div
+                                      class="text-small float-right font-weight-bold text-dark"
+                                    >
+                                      2,675
+                                    </div>
+                                    <div class="font-weight-bold">Target</div>
+                                    <div
+                                      class="progress progress-striped mt-1"
+                                      data-height="15"
+                                    >
+                                      <div
+                                        class="progress-bar l-bg-green"
+                                        role="progressbar"
+                                        data-width="100%"
+                                        aria-valuenow="25"
+                                        aria-valuemin="0"
+                                        aria-valuemax="100"
+                                      >
+                                        100%
+                                      </div>
+                                    </div>
                                   </div>
                                 </div>
                               </div>
-                              <div class="col-10">
-                                <div class="m-b-15">
-                                  <div
-                                    class="text-small float-right font-weight-bold text-dark"
-                                  >
-                                    620
-                                  </div>
-                                  <div class="font-weight-bold">Actual</div>
-                                  <div class="progress" data-height="15">
+                            </div>
+                          </div>
+
+                          <div class="card card-danger card-custom">
+                            <div class="card-body">
+                              <h6 class="text-danger">Production</h6>
+                              <div class="row align-items-center">
+                                <div class="col-2">
+                                  <div class="card rounded-circle text-center">
                                     <div
-                                      class="progress-bar l-bg-purple"
-                                      role="progressbar"
-                                      data-width="40%"
-                                      aria-valuenow="1675"
-                                      aria-valuemin="0"
-                                      aria-valuemax="2675"
+                                      class="card-body p-3 text-dark text-center"
+                                    >
+                                      72%
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-10">
+                                  <div class="m-b-15">
+                                    <div
+                                      class="text-small float-right font-weight-bold text-dark"
+                                    >
+                                      1,845
+                                    </div>
+                                    <div class="font-weight-bold">Actual</div>
+                                    <div class="progress" data-height="15">
+                                      <div
+                                        class="progress-bar l-bg-purple"
+                                        role="progressbar"
+                                        data-width="72%"
+                                        aria-valuenow="1675"
+                                        aria-valuemin="0"
+                                        aria-valuemax="2675"
+                                      >
+                                        72%
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="m-b-15">
+                                    <div
+                                      class="text-small float-right font-weight-bold text-dark"
+                                    >
+                                      2,675
+                                    </div>
+                                    <div class="font-weight-bold">Target</div>
+                                    <div
+                                      class="progress progress-striped mt-1"
+                                      data-height="15"
+                                    >
+                                      <div
+                                        class="progress-bar l-bg-green"
+                                        role="progressbar"
+                                        data-width="100%"
+                                        aria-valuenow="25"
+                                        aria-valuemin="0"
+                                        aria-valuemax="100"
+                                      >
+                                        100%
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="card card-info card-custom">
+                            <div class="card-body">
+                              <h6 class="text-info">Attendence</h6>
+                              <div class="row align-items-center">
+                                <div class="col-2">
+                                  <div class="card rounded-circle text-center">
+                                    <div
+                                      class="card-body p-3 text-dark text-center"
                                     >
                                       40%
                                     </div>
                                   </div>
                                 </div>
-                                <div class="m-b-15">
-                                  <div
-                                    class="text-small float-right font-weight-bold text-dark"
-                                  >
-                                    2,675
-                                  </div>
-                                  <div class="font-weight-bold">Target</div>
-                                  <div
-                                    class="progress progress-striped mt-1"
-                                    data-height="15"
-                                  >
+                                <div class="col-10">
+                                  <div class="m-b-15">
                                     <div
-                                      class="progress-bar l-bg-green"
-                                      role="progressbar"
-                                      data-width="100%"
-                                      aria-valuenow="25"
-                                      aria-valuemin="0"
-                                      aria-valuemax="100"
+                                      class="text-small float-right font-weight-bold text-dark"
                                     >
-                                      100%
+                                      620
+                                    </div>
+                                    <div class="font-weight-bold">Actual</div>
+                                    <div class="progress" data-height="15">
+                                      <div
+                                        class="progress-bar l-bg-purple"
+                                        role="progressbar"
+                                        data-width="40%"
+                                        aria-valuenow="1675"
+                                        aria-valuemin="0"
+                                        aria-valuemax="2675"
+                                      >
+                                        40%
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="m-b-15">
+                                    <div
+                                      class="text-small float-right font-weight-bold text-dark"
+                                    >
+                                      2,675
+                                    </div>
+                                    <div class="font-weight-bold">Target</div>
+                                    <div
+                                      class="progress progress-striped mt-1"
+                                      data-height="15"
+                                    >
+                                      <div
+                                        class="progress-bar l-bg-green"
+                                        role="progressbar"
+                                        data-width="100%"
+                                        aria-valuenow="25"
+                                        aria-valuemin="0"
+                                        aria-valuemax="100"
+                                      >
+                                        100%
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="tab-pane fade pb-0"
+                          id="daily-tab-pane"
+                          role="tabpanel"
+                          aria-labelledby="daily-tab-pane"
+                        >
+                          <div class="card card-success card-custom">
+                            <div class="card-body">
+                              <h6 class="text-success">Quality</h6>
+                              <div class="row align-items-center">
+                                <div class="col-2">
+                                  <div class="card rounded-circle text-center">
+                                    <div
+                                      class="card-body p-3 text-dark text-center"
+                                    >
+                                      60%
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-10">
+                                  <div class="m-b-15">
+                                    <div
+                                      class="text-small float-right font-weight-bold text-dark"
+                                    >
+                                      1,645
+                                    </div>
+                                    <div class="font-weight-bold">Actual</div>
+                                    <div class="progress" data-height="15">
+                                      <div
+                                        class="progress-bar l-bg-purple"
+                                        role="progressbar"
+                                        data-width="60%"
+                                        aria-valuenow="1675"
+                                        aria-valuemin="0"
+                                        aria-valuemax="2675"
+                                      >
+                                        60%
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="m-b-15">
+                                    <div
+                                      class="text-small float-right font-weight-bold text-dark"
+                                    >
+                                      2,675
+                                    </div>
+                                    <div class="font-weight-bold">Target</div>
+                                    <div
+                                      class="progress progress-striped mt-1"
+                                      data-height="15"
+                                    >
+                                      <div
+                                        class="progress-bar l-bg-green"
+                                        role="progressbar"
+                                        data-width="100%"
+                                        aria-valuenow="25"
+                                        aria-valuemin="0"
+                                        aria-valuemax="100"
+                                      >
+                                        100%
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="card card-danger card-custom">
+                            <div class="card-body">
+                              <h6 class="text-danger">Production</h6>
+                              <div class="row align-items-center">
+                                <div class="col-2">
+                                  <div class="card rounded-circle text-center">
+                                    <div
+                                      class="card-body p-3 text-dark text-center"
+                                    >
+                                      72%
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-10">
+                                  <div class="m-b-15">
+                                    <div
+                                      class="text-small float-right font-weight-bold text-dark"
+                                    >
+                                      1,845
+                                    </div>
+                                    <div class="font-weight-bold">Actual</div>
+                                    <div class="progress" data-height="15">
+                                      <div
+                                        class="progress-bar l-bg-purple"
+                                        role="progressbar"
+                                        data-width="72%"
+                                        aria-valuenow="1675"
+                                        aria-valuemin="0"
+                                        aria-valuemax="2675"
+                                      >
+                                        72%
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="m-b-15">
+                                    <div
+                                      class="text-small float-right font-weight-bold text-dark"
+                                    >
+                                      2,675
+                                    </div>
+                                    <div class="font-weight-bold">Target</div>
+                                    <div
+                                      class="progress progress-striped mt-1"
+                                      data-height="15"
+                                    >
+                                      <div
+                                        class="progress-bar l-bg-green"
+                                        role="progressbar"
+                                        data-width="100%"
+                                        aria-valuenow="25"
+                                        aria-valuemin="0"
+                                        aria-valuemax="100"
+                                      >
+                                        100%
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="card card-info card-custom">
+                            <div class="card-body">
+                              <h6 class="text-info">Attendence</h6>
+                              <div class="row align-items-center">
+                                <div class="col-2">
+                                  <div class="card rounded-circle text-center">
+                                    <div
+                                      class="card-body p-3 text-dark text-center"
+                                    >
+                                      40%
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-10">
+                                  <div class="m-b-15">
+                                    <div
+                                      class="text-small float-right font-weight-bold text-dark"
+                                    >
+                                      620
+                                    </div>
+                                    <div class="font-weight-bold">Actual</div>
+                                    <div class="progress" data-height="15">
+                                      <div
+                                        class="progress-bar l-bg-purple"
+                                        role="progressbar"
+                                        data-width="40%"
+                                        aria-valuenow="1675"
+                                        aria-valuemin="0"
+                                        aria-valuemax="2675"
+                                      >
+                                        40%
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="m-b-15">
+                                    <div
+                                      class="text-small float-right font-weight-bold text-dark"
+                                    >
+                                      2,675
+                                    </div>
+                                    <div class="font-weight-bold">Target</div>
+                                    <div
+                                      class="progress progress-striped mt-1"
+                                      data-height="15"
+                                    >
+                                      <div
+                                        class="progress-bar l-bg-green"
+                                        role="progressbar"
+                                        data-width="100%"
+                                        aria-valuenow="25"
+                                        aria-valuemin="0"
+                                        aria-valuemax="100"
+                                      >
+                                        100%
+                                      </div>
                                     </div>
                                   </div>
                                 </div>
@@ -293,18 +595,114 @@
                           </div>
                         </div>
                       </div>
-                      <div
-                        class="tab-pane fade pb-0"
-                        id="profile3"
-                        role="tabpanel"
-                        aria-labelledby="profile-tab3"
-                      ></div>
-                      <div
-                        class="tab-pane fade pb-0"
-                        id="contact3"
-                        role="tabpanel"
-                        aria-labelledby="contact-tab3"
-                      ></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card">
+                    <div class="card-header">
+                      <h4 class="text-dark">Current Standings</h4>
+                      <div class="card-header-action">
+                        <ul
+                          class="nav nav-pills nav-justified mb-2"
+                          id="your-rank-tab"
+                          role="tablist"
+                        >
+                          <li class="nav-item">
+                            <a
+                              class="nav-link active text-uppercase"
+                              id="monthly-rank-tab"
+                              data-toggle="tab"
+                              href="#monthly-rank-tab-pane"
+                              role="tab"
+                              aria-controls="monthly-tab-pane"
+                              aria-selected="true"
+                              >Monthly</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a
+                              class="nav-link text-uppercase"
+                              id="weekly-rank-tab"
+                              data-toggle="tab"
+                              href="#weekly-rank-tab-pane"
+                              role="tab"
+                              aria-controls="weekly-tab-pane"
+                              aria-selected="false"
+                              >Weekly</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a
+                              class="nav-link text-uppercase"
+                              id="daily-rank-tab"
+                              data-toggle="tab"
+                              href="#daily-rank-tab-pane"
+                              role="tab"
+                              aria-controls="daily-tab-pane"
+                              aria-selected="false"
+                              >Daily</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="card-body pb-0">
+                      <div class="tab-content">
+                        <div
+                          class="tab-pane fade show active pb-0"
+                          id="monthly-rank-tab-pane"
+                          role="tabpanel"
+                          aria-labelledby="monthly-rank-tab-pane"
+                        >
+                          <div class="card card-warning card-custom">
+                            <div class="card-body p-4">
+                              <div class="row align-items-center">
+                                <div class="col-md-12 text-center">
+                                  <h1 class="text-success">20</h1>
+                                  <h4>Your Rank</h4>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div
+                          class="tab-pane fade pb-0"
+                          id="weekly-rank-tab-pane"
+                          role="tabpanel"
+                          aria-labelledby="monthly-rank-tab-pane"
+                        >
+                          <div class="card card-warning card-custom">
+                            <div class="card-body p-4">
+                              <div class="row align-items-center">
+                                <div class="col-md-12 text-center">
+                                  <h1 class="text-success">15</h1>
+                                  <h4>Your Rank</h4>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div
+                          class="tab-pane fade pb-0"
+                          id="daily-rank-tab-pane"
+                          role="tabpanel"
+                          aria-labelledby="monthly-rank-tab-pane"
+                        >
+                          <div class="card card-warning card-custom">
+                            <div class="card-body p-4">
+                              <div class="row align-items-center">
+                                <div class="col-md-12 text-center">
+                                  <h1 class="text-success">30</h1>
+                                  <h4>Your Rank</h4>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
