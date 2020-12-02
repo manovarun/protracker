@@ -32,13 +32,14 @@ ol {
 }
 
 .main-content {
-  padding: 60px 30px 0;
+  padding: 60px 20px 0;
   width: 100%;
   position: relative;
 }
 
 .main-footer {
   padding: 20px;
+  margin-top: 10px;
 }
 
 .navbar {
@@ -73,12 +74,17 @@ ol {
   margin-bottom: 15px;
 }
 
+.card .card-header {
+  padding: 10px 15px;
+  border-bottom-color: #f4f4f4;
+}
+
 .card .card-header h4 {
   line-height: 24px;
 }
 
 .card .card-body {
-  padding: 10px 20px;
+  padding: 10px 15px;
 }
 
 .card .rounded-circle {
@@ -101,9 +107,6 @@ ol {
 .tab-content-knob [class*="col-md-"] {
   padding: 0 10px;
 }
-.nav-pills .nav-item .nav-link {
-  padding: 0.5rem 1.25rem !important;
-}
 
 .theme-purple .nav-pills .nav-link.active {
   box-shadow: 0 2px 6px #acb5f6;
@@ -112,12 +115,14 @@ ol {
   border-radius: 30px !important;
 }
 
-.nav-pills .nav-item .nav-link:hover {
+.theme-purple .nav-pills .nav-item .nav-link:hover {
   border-radius: 30px !important;
 }
 
 .theme-purple .nav-pills .nav-link {
-  margin: 0 8px;
+  margin: 0 4px;
+  font-size: 12px;
+  padding: 0.35rem 1.25rem !important;
 }
 
 .tab-content > .tab-pane {

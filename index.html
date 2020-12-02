@@ -52,11 +52,11 @@
         <div class="main-content">
           <section class="section pt-3">
             <div class="section-body">
-              <div class="row">
+              <div class="row mb-3">
                 <div class="col-md-7">
-                  <div class="card">
+                  <div class="card card-success mb-0">
                     <div class="card-header">
-                      <h4 class="text-dark">Productive Hours</h4>
+                      <h4 class="text-dark">Current Standings</h4>
                       <div class="card-header-action">
                         <ul
                           class="nav nav-pills mb-0"
@@ -87,22 +87,10 @@
                               >Weekly</a
                             >
                           </li>
-                          <li class="nav-item">
-                            <a
-                              class="nav-link text-uppercase"
-                              id="daily-tab"
-                              data-toggle="tab"
-                              href="#daily-tab-pane"
-                              role="tab"
-                              aria-controls="daily-tab-pane"
-                              aria-selected="false"
-                              >Daily</a
-                            >
-                          </li>
                         </ul>
                       </div>
                     </div>
-                    <div class="card-body pb-0">
+                    <div class="card-body">
                       <div class="tab-content">
                         <div
                           class="tab-pane fade show active pb-0"
@@ -110,99 +98,101 @@
                           role="tabpanel"
                           aria-labelledby="monthly-tab-pane"
                         >
-                          <div class="card card-success card-custom">
-                            <div class="card-body">
-                              <h6 class="text-success">Quality</h6>
-                              <div class="row align-items-center">
-                                <div class="col-2">
-                                  <div class="card rounded-circle text-center">
+                          <div class="mb-4">
+                            <div class="row align-items-center">
+                              <div class="col-2">
+                                <h6 class="text-success">Quality</h6>
+                              </div>
+                              <div class="col-2">
+                                <div class="card rounded-circle text-center">
+                                  <div
+                                    class="card-body p-3 text-dark text-center"
+                                  >
+                                    60%
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-8">
+                                <div class="m-b-15">
+                                  <div
+                                    class="progress progress-striped mt-1"
+                                    data-height="15"
+                                  >
                                     <div
-                                      class="card-body p-3 text-dark text-center"
+                                      class="progress-bar l-bg-green"
+                                      role="progressbar"
+                                      data-width="60%"
+                                      aria-valuenow="60"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
                                     >
                                       60%
                                     </div>
                                   </div>
                                 </div>
-                                <div class="col-10">
-                                  <div class="m-b-15">
-                                    <div
-                                      class="progress progress-striped mt-1"
-                                      data-height="15"
-                                    >
-                                      <div
-                                        class="progress-bar l-bg-green"
-                                        role="progressbar"
-                                        data-width="60%"
-                                        aria-valuenow="60"
-                                        aria-valuemin="0"
-                                        aria-valuemax="100"
-                                      >
-                                        60%
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
                               </div>
                             </div>
                           </div>
-                          <div class="card card-danger card-custom">
-                            <div class="card-body">
-                              <h6 class="text-danger">Production</h6>
-                              <div class="row align-items-center">
-                                <div class="col-2">
-                                  <div class="card rounded-circle text-center">
+
+                          <div class="mb-4">
+                            <div class="row align-items-center">
+                              <div class="col-2">
+                                <h6 class="text-danger">Production</h6>
+                              </div>
+                              <div class="col-2">
+                                <div class="card rounded-circle text-center">
+                                  <div
+                                    class="card-body p-3 text-dark text-center"
+                                  >
+                                    72%
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-8">
+                                <div class="m-b-15">
+                                  <div class="progress" data-height="15">
                                     <div
-                                      class="card-body p-3 text-dark text-center"
+                                      class="progress-bar l-bg-red"
+                                      role="progressbar"
+                                      data-width="72%"
+                                      aria-valuenow="72"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
                                     >
                                       72%
                                     </div>
                                   </div>
                                 </div>
-                                <div class="col-10">
-                                  <div class="m-b-15">
-                                    <div class="progress" data-height="15">
-                                      <div
-                                        class="progress-bar l-bg-red"
-                                        role="progressbar"
-                                        data-width="72%"
-                                        aria-valuenow="72"
-                                        aria-valuemin="0"
-                                        aria-valuemax="100"
-                                      >
-                                        72%
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
                               </div>
                             </div>
                           </div>
-                          <div class="card card-info card-custom">
-                            <div class="card-body">
-                              <h6 class="text-info">Attendence</h6>
-                              <div class="row align-items-center">
-                                <div class="col-2">
-                                  <div class="card rounded-circle text-center">
-                                    <div
-                                      class="card-body p-3 text-dark text-center"
-                                    >
-                                      90%
-                                    </div>
+
+                          <div class="mb-3">
+                            <div class="row align-items-center">
+                              <div class="col-2">
+                                <h6 class="text-info">Attendence</h6>
+                              </div>
+                              <div class="col-2">
+                                <div class="card rounded-circle text-center">
+                                  <div
+                                    class="card-body p-3 text-dark text-center"
+                                  >
+                                    90%
                                   </div>
                                 </div>
-                                <div class="col-10">
-                                  <div class="m-b-15">
-                                    <div class="progress" data-height="15">
-                                      <div
-                                        class="progress-bar l-bg-cyan"
-                                        role="progressbar"
-                                        data-width="90%"
-                                        aria-valuenow="90"
-                                        aria-valuemin="0"
-                                        aria-valuemax="100"
-                                      >
-                                        90%
-                                      </div>
+                              </div>
+                              <div class="col-8">
+                                <div class="m-b-15">
+                                  <div class="progress" data-height="15">
+                                    <div
+                                      class="progress-bar l-bg-cyan"
+                                      role="progressbar"
+                                      data-width="90%"
+                                      aria-valuenow="90"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                    >
+                                      90%
                                     </div>
                                   </div>
                                 </div>
@@ -216,205 +206,101 @@
                           role="tabpanel"
                           aria-labelledby="weekly-tab-pane"
                         >
-                          <div class="card card-success card-custom">
-                            <div class="card-body">
-                              <h6 class="text-success">Quality</h6>
-                              <div class="row align-items-center">
-                                <div class="col-2">
-                                  <div class="card rounded-circle text-center">
-                                    <div
-                                      class="card-body p-3 text-dark text-center"
-                                    >
-                                      66%
-                                    </div>
+                          <div class="mb-4">
+                            <div class="row align-items-center">
+                              <div class="col-2">
+                                <h6 class="text-success">Quality</h6>
+                              </div>
+                              <div class="col-2">
+                                <div class="card rounded-circle text-center">
+                                  <div
+                                    class="card-body p-3 text-dark text-center"
+                                  >
+                                    68%
                                   </div>
                                 </div>
-                                <div class="col-10">
-                                  <div class="m-b-15">
+                              </div>
+                              <div class="col-8">
+                                <div class="m-b-15">
+                                  <div
+                                    class="progress progress-striped mt-1"
+                                    data-height="15"
+                                  >
                                     <div
-                                      class="progress progress-striped mt-1"
-                                      data-height="15"
+                                      class="progress-bar l-bg-green"
+                                      role="progressbar"
+                                      data-width="68%"
+                                      aria-valuenow="68"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
                                     >
-                                      <div
-                                        class="progress-bar l-bg-green"
-                                        role="progressbar"
-                                        data-width="66%"
-                                        aria-valuenow="66"
-                                        aria-valuemin="0"
-                                        aria-valuemax="100"
-                                      >
-                                        66%
-                                      </div>
+                                      68%
                                     </div>
                                   </div>
                                 </div>
                               </div>
                             </div>
                           </div>
-                          <div class="card card-danger card-custom">
-                            <div class="card-body">
-                              <h6 class="text-danger">Production</h6>
-                              <div class="row align-items-center">
-                                <div class="col-2">
-                                  <div class="card rounded-circle text-center">
-                                    <div
-                                      class="card-body p-3 text-dark text-center"
-                                    >
-                                      79%
-                                    </div>
+
+                          <div class="mb-4">
+                            <div class="row align-items-center">
+                              <div class="col-2">
+                                <h6 class="text-danger">Production</h6>
+                              </div>
+                              <div class="col-2">
+                                <div class="card rounded-circle text-center">
+                                  <div
+                                    class="card-body p-3 text-dark text-center"
+                                  >
+                                    82%
                                   </div>
                                 </div>
-                                <div class="col-10">
-                                  <div class="m-b-15">
-                                    <div class="progress" data-height="15">
-                                      <div
-                                        class="progress-bar l-bg-red"
-                                        role="progressbar"
-                                        data-width="79%"
-                                        aria-valuenow="79"
-                                        aria-valuemin="0"
-                                        aria-valuemax="100"
-                                      >
-                                        79%
-                                      </div>
+                              </div>
+                              <div class="col-8">
+                                <div class="m-b-15">
+                                  <div class="progress" data-height="15">
+                                    <div
+                                      class="progress-bar l-bg-red"
+                                      role="progressbar"
+                                      data-width="82%"
+                                      aria-valuenow="82"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                    >
+                                      82%
                                     </div>
                                   </div>
                                 </div>
                               </div>
                             </div>
                           </div>
-                          <div class="card card-info card-custom">
-                            <div class="card-body">
-                              <h6 class="text-info">Attendence</h6>
-                              <div class="row align-items-center">
-                                <div class="col-2">
-                                  <div class="card rounded-circle text-center">
-                                    <div
-                                      class="card-body p-3 text-dark text-center"
-                                    >
-                                      56%
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-10">
-                                  <div class="m-b-15">
-                                    <div class="progress" data-height="15">
-                                      <div
-                                        class="progress-bar l-bg-cyan"
-                                        role="progressbar"
-                                        data-width="56%"
-                                        aria-valuenow="56"
-                                        aria-valuemin="0"
-                                        aria-valuemax="100"
-                                      >
-                                        56%
-                                      </div>
-                                    </div>
+
+                          <div class="mb-3">
+                            <div class="row align-items-center">
+                              <div class="col-2">
+                                <h6 class="text-info">Attendence</h6>
+                              </div>
+                              <div class="col-2">
+                                <div class="card rounded-circle text-center">
+                                  <div
+                                    class="card-body p-3 text-dark text-center"
+                                  >
+                                    40%
                                   </div>
                                 </div>
                               </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          class="tab-pane fade pb-0"
-                          id="daily-tab-pane"
-                          role="tabpanel"
-                          aria-labelledby="daily-tab-pane"
-                        >
-                          <div class="card card-success card-custom">
-                            <div class="card-body">
-                              <h6 class="text-success">Quality</h6>
-                              <div class="row align-items-center">
-                                <div class="col-2">
-                                  <div class="card rounded-circle text-center">
+                              <div class="col-8">
+                                <div class="m-b-15">
+                                  <div class="progress" data-height="15">
                                     <div
-                                      class="card-body p-3 text-dark text-center"
+                                      class="progress-bar l-bg-cyan"
+                                      role="progressbar"
+                                      data-width="45%"
+                                      aria-valuenow="45"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
                                     >
-                                      72%
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-10">
-                                  <div class="m-b-15">
-                                    <div
-                                      class="progress progress-striped mt-1"
-                                      data-height="15"
-                                    >
-                                      <div
-                                        class="progress-bar l-bg-green"
-                                        role="progressbar"
-                                        data-width="72%"
-                                        aria-valuenow="72"
-                                        aria-valuemin="0"
-                                        aria-valuemax="100"
-                                      >
-                                        72%
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="card card-danger card-custom">
-                            <div class="card-body">
-                              <h6 class="text-danger">Production</h6>
-                              <div class="row align-items-center">
-                                <div class="col-2">
-                                  <div class="card rounded-circle text-center">
-                                    <div
-                                      class="card-body p-3 text-dark text-center"
-                                    >
-                                      88%
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-10">
-                                  <div class="m-b-15">
-                                    <div class="progress" data-height="15">
-                                      <div
-                                        class="progress-bar l-bg-red"
-                                        role="progressbar"
-                                        data-width="88%"
-                                        aria-valuenow="88"
-                                        aria-valuemin="0"
-                                        aria-valuemax="100"
-                                      >
-                                        88%
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="card card-info card-custom">
-                            <div class="card-body">
-                              <h6 class="text-info">Attendence</h6>
-                              <div class="row align-items-center">
-                                <div class="col-2">
-                                  <div class="card rounded-circle text-center">
-                                    <div
-                                      class="card-body p-3 text-dark text-center"
-                                    >
-                                      92%
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-10">
-                                  <div class="m-b-15">
-                                    <div class="progress" data-height="15">
-                                      <div
-                                        class="progress-bar l-bg-cyan"
-                                        role="progressbar"
-                                        data-width="92%"
-                                        aria-valuenow="92"
-                                        aria-valuemin="0"
-                                        aria-valuemax="100"
-                                      >
-                                        92%
-                                      </div>
+                                      45%
                                     </div>
                                   </div>
                                 </div>
@@ -427,49 +313,49 @@
                   </div>
                 </div>
                 <div class="col-md-5">
-                  <div class="card">
+                  <div class="card card-warning mb-0 h-100">
                     <div class="card-header">
                       <h4 class="text-dark">Current Standings</h4>
                       <div class="card-header-action">
                         <ul
-                          class="nav nav-pills nav-justified mb-2"
-                          id="your-rank-tab"
+                          class="nav nav-pills nav-justified mb-0"
+                          id="current-rank-tab"
                           role="tablist"
                         >
                           <li class="nav-item">
                             <a
                               class="nav-link active text-uppercase"
-                              id="monthly-rank-tab"
+                              id="project-rank-tab"
                               data-toggle="tab"
-                              href="#monthly-rank-tab-pane"
+                              href="#project-rank-tab-pane"
                               role="tab"
-                              aria-controls="monthly-tab-pane"
+                              aria-controls="project-tab-pane"
                               aria-selected="true"
-                              >Monthly</a
+                              >Project</a
                             >
                           </li>
                           <li class="nav-item">
                             <a
                               class="nav-link text-uppercase"
-                              id="weekly-rank-tab"
+                              id="process-rank-tab"
                               data-toggle="tab"
-                              href="#weekly-rank-tab-pane"
+                              href="#process-rank-tab-pane"
                               role="tab"
-                              aria-controls="weekly-tab-pane"
+                              aria-controls="process-tab-pane"
                               aria-selected="false"
-                              >Weekly</a
+                              >Process</a
                             >
                           </li>
                           <li class="nav-item">
                             <a
                               class="nav-link text-uppercase"
-                              id="daily-rank-tab"
+                              id="ajuba-rank-tab"
                               data-toggle="tab"
-                              href="#daily-rank-tab-pane"
+                              href="#ajuba-rank-tab-pane"
                               role="tab"
-                              aria-controls="daily-tab-pane"
+                              aria-controls="ajuba-tab-pane"
                               aria-selected="false"
-                              >Daily</a
+                              >Ajuba</a
                             >
                           </li>
                         </ul>
@@ -479,17 +365,15 @@
                       <div class="tab-content">
                         <div
                           class="tab-pane fade show active pb-0"
-                          id="monthly-rank-tab-pane"
+                          id="project-rank-tab-pane"
                           role="tabpanel"
-                          aria-labelledby="monthly-rank-tab-pane"
+                          aria-labelledby="project-rank-tab-pane"
                         >
-                          <div class="card card-warning card-custom">
-                            <div class="card-body p-5">
-                              <div class="row align-items-center">
-                                <div class="col-md-12 text-center">
-                                  <h1 class="text-success">20</h1>
-                                  <h4>Your Rank</h4>
-                                </div>
+                          <div class="row align-items-center">
+                            <div class="col-md-12 text-center">
+                              <div class="p-3">
+                                <h1 class="text-success pb-3">20</h1>
+                                <h4 class="pb-3">Your Rank</h4>
                               </div>
                             </div>
                           </div>
@@ -497,17 +381,15 @@
 
                         <div
                           class="tab-pane fade pb-0"
-                          id="weekly-rank-tab-pane"
+                          id="process-rank-tab-pane"
                           role="tabpanel"
-                          aria-labelledby="monthly-rank-tab-pane"
+                          aria-labelledby="process-rank-tab-pane"
                         >
-                          <div class="card card-warning card-custom">
-                            <div class="card-body p-5">
-                              <div class="row align-items-center">
-                                <div class="col-md-12 text-center">
-                                  <h1 class="text-success">15</h1>
-                                  <h4>Your Rank</h4>
-                                </div>
+                          <div class="row align-items-center">
+                            <div class="col-md-12 text-center">
+                              <div class="p-3">
+                                <h1 class="text-success pb-3">30</h1>
+                                <h4 class="pb-3">Your Rank</h4>
                               </div>
                             </div>
                           </div>
@@ -515,17 +397,15 @@
 
                         <div
                           class="tab-pane fade pb-0"
-                          id="daily-rank-tab-pane"
+                          id="ajuba-rank-tab-pane"
                           role="tabpanel"
-                          aria-labelledby="monthly-rank-tab-pane"
+                          aria-labelledby="ajuba-rank-tab-pane"
                         >
-                          <div class="card card-warning card-custom">
-                            <div class="card-body p-5">
-                              <div class="row align-items-center">
-                                <div class="col-md-12 text-center">
-                                  <h1 class="text-success">30</h1>
-                                  <h4>Your Rank</h4>
-                                </div>
+                          <div class="row align-items-center">
+                            <div class="col-md-12 text-center">
+                              <div class="p-3">
+                                <h1 class="text-success pb-3">52</h1>
+                                <h4 class="pb-3">Your Rank</h4>
                               </div>
                             </div>
                           </div>
@@ -535,12 +415,17 @@
                   </div>
                 </div>
               </div>
-              <hr />
-              <div class="row">
+
+              <div class="row mb-3">
                 <div class="col-md-7">
-                  <div class="card">
+                  <div class="card card-danger mb-0">
                     <div class="card-header">
-                      <h4 class="text-dark">Forecast</h4>
+                      <h4 class="text-dark">
+                        Forecast
+                        <small class="text-warning ml-4">
+                          * Please update graph to view the forecast
+                        </small>
+                      </h4>
                       <div class="card-header-action">
                         <ul
                           class="nav nav-pills mb-0"
@@ -571,34 +456,22 @@
                               >Weekly</a
                             >
                           </li>
-                          <li class="nav-item">
-                            <a
-                              class="nav-link text-uppercase"
-                              id="forecast-daily-tab"
-                              data-toggle="tab"
-                              href="#forecast-daily-tab-pane"
-                              role="tab"
-                              aria-controls="forecast-daily-tab-pane"
-                              aria-selected="false"
-                              >Daily</a
-                            >
-                          </li>
                         </ul>
                       </div>
                     </div>
-                    <div class="card-body pb-0">
+                    <div class="card-body pb-0 px-4">
                       <div class="tab-content tab-content-knob">
                         <div
                           class="tab-pane fade show active pb-0"
                           id="forecast-monthly-tab-pane"
                           role="tabpanel"
-                          aria-labelledby="monthly-tab-pane"
+                          aria-labelledby="forecast-monthly-tab-pane"
                         >
                           <div class="row">
                             <div class="col-md-4">
-                              <div class="card card-success card-custom">
+                              <div class="card card-custom">
                                 <div class="card-body">
-                                  <h6 class="text-success">Project</h6>
+                                  <h6 class="text-success">Quality</h6>
                                   <div
                                     class="row align-items-center justify-content-center"
                                   >
@@ -616,9 +489,9 @@
                               </div>
                             </div>
                             <div class="col-md-4">
-                              <div class="card card-danger card-custom">
+                              <div class="card card-custom">
                                 <div class="card-body">
-                                  <h6 class="text-danger">Process</h6>
+                                  <h6 class="text-danger">Production</h6>
                                   <div
                                     class="row align-items-center justify-content-center"
                                   >
@@ -636,9 +509,9 @@
                               </div>
                             </div>
                             <div class="col-md-4">
-                              <div class="card card-info card-custom">
+                              <div class="card card-custom">
                                 <div class="card-body">
-                                  <h6 class="text-info">Overall Ajuba</h6>
+                                  <h6 class="text-info">Attendence</h6>
                                   <div
                                     class="row align-items-center justify-content-center"
                                   >
@@ -661,13 +534,13 @@
                           class="tab-pane fade pb-0"
                           id="forecast-weekly-tab-pane"
                           role="tabpanel"
-                          aria-labelledby="weekly-tab-pane"
+                          aria-labelledby="forecast-weekly-tab-pane"
                         >
                           <div class="row">
                             <div class="col-md-4">
-                              <div class="card card-success card-custom">
+                              <div class="card card-custom">
                                 <div class="card-body">
-                                  <h6 class="text-success">Project</h6>
+                                  <h6 class="text-success">Quality</h6>
                                   <div
                                     class="row align-items-center justify-content-center"
                                   >
@@ -685,9 +558,9 @@
                               </div>
                             </div>
                             <div class="col-md-4">
-                              <div class="card card-danger card-custom">
+                              <div class="card card-custom">
                                 <div class="card-body">
-                                  <h6 class="text-danger">Process</h6>
+                                  <h6 class="text-danger">Production</h6>
                                   <div
                                     class="row align-items-center justify-content-center"
                                   >
@@ -705,9 +578,9 @@
                               </div>
                             </div>
                             <div class="col-md-4">
-                              <div class="card card-info card-custom">
+                              <div class="card card-custom">
                                 <div class="card-body">
-                                  <h6 class="text-info">Overall Ajuba</h6>
+                                  <h6 class="text-info">Attendence</h6>
                                   <div
                                     class="row align-items-center justify-content-center"
                                   >
@@ -734,7 +607,7 @@
                         >
                           <div class="row">
                             <div class="col-md-4">
-                              <div class="card card-success card-custom">
+                              <div class="card card-custom">
                                 <div class="card-body">
                                   <h6 class="text-success">Project</h6>
                                   <div
@@ -796,76 +669,71 @@
                           </div>
                         </div>
                       </div>
-                      <p class="text-warning">
-                        * Please update the graph to view the forecast
-                      </p>
                     </div>
                   </div>
                 </div>
                 <div class="col-md-5">
-                  <div class="card">
+                  <div class="card card-info mb-0 h-100">
                     <div class="card-header">
                       <h4 class="text-dark">Forecast Standings</h4>
                       <div class="card-header-action">
                         <ul
-                          class="nav nav-pills nav-justified mb-2"
+                          class="nav nav-pills nav-justified mb-0"
                           id="forecast-rank-tab"
                           role="tablist"
                         >
                           <li class="nav-item">
                             <a
                               class="nav-link active text-uppercase"
-                              id="monthly-forecast-tab"
+                              id="project-forecast-tab"
                               data-toggle="tab"
-                              href="#monthly-forecast-tab-pane"
+                              href="#project-forecast-tab-pane"
                               role="tab"
-                              aria-controls="monthly-tab-pane"
+                              aria-controls="project-forecast-tab-pane"
                               aria-selected="true"
-                              >Monthly</a
+                              >Project</a
                             >
                           </li>
                           <li class="nav-item">
                             <a
                               class="nav-link text-uppercase"
-                              id="weekly-forecast-tab"
+                              id="process-forecast-tab"
                               data-toggle="tab"
-                              href="#weekly-forecast-tab-pane"
+                              href="#process-forecast-tab-pane"
                               role="tab"
-                              aria-controls="weekly-tab-pane"
+                              aria-controls="process-forecast-tab-pane"
                               aria-selected="false"
-                              >Weekly</a
+                              >Process</a
                             >
                           </li>
                           <li class="nav-item">
                             <a
                               class="nav-link text-uppercase"
-                              id="daily-forecast-tab"
+                              id="ajuba-forecast-tab"
                               data-toggle="tab"
-                              href="#daily-forecast-tab-pane"
+                              href="#ajuba-forecast-tab-pane"
                               role="tab"
-                              aria-controls="daily-tab-pane"
+                              aria-controls="ajuba-forecast-tab-pane"
                               aria-selected="false"
-                              >Daily</a
+                              >Ajuba</a
                             >
                           </li>
                         </ul>
                       </div>
                     </div>
-                    <div class="card-body pb-0">
+                    <div class="card-body pb-0 px-2">
                       <div class="tab-content">
                         <div
                           class="tab-pane fade show active pb-0"
-                          id="monthly-forecast-tab-pane"
+                          id="project-forecast-tab-pane"
                           role="tabpanel"
-                          aria-labelledby="monthly-forecast-tab-pane"
+                          aria-labelledby="project-forecast-tab-pane"
                         >
-                          <div class="card card-warning card-custom">
-                            <div class="card-body p-5">
-                              <div class="row align-items-center">
-                                <div class="col-md-12 text-center">
-                                  <h1 class="text-success">20</h1>
-                                  <h4>Your Forecast Rank</h4>
-                                </div>
+                          <div class="row align-items-center">
+                            <div class="col-md-12 text-center">
+                              <div class="p-3">
+                                <h1 class="text-success pb-3">20</h1>
+                                <h4 class="pb-3">Your Rank</h4>
                               </div>
                             </div>
                           </div>
@@ -873,17 +741,15 @@
 
                         <div
                           class="tab-pane fade pb-0"
-                          id="weekly-forecast-tab-pane"
+                          id="process-forecast-tab-pane"
                           role="tabpanel"
-                          aria-labelledby="monthly-forecast-tab-pane"
+                          aria-labelledby="process-forecast-tab-pane"
                         >
-                          <div class="card card-warning card-custom">
-                            <div class="card-body p-5">
-                              <div class="row align-items-center">
-                                <div class="col-md-12 text-center">
-                                  <h1 class="text-success">15</h1>
-                                  <h4>Your Forecast Rank</h4>
-                                </div>
+                          <div class="row align-items-center">
+                            <div class="col-md-12 text-center">
+                              <div class="p-3">
+                                <h1 class="text-success pb-3">30</h1>
+                                <h4 class="pb-3">Your Rank</h4>
                               </div>
                             </div>
                           </div>
@@ -891,17 +757,15 @@
 
                         <div
                           class="tab-pane fade pb-0"
-                          id="daily-forecast-tab-pane"
+                          id="ajuba-forecast-tab-pane"
                           role="tabpanel"
-                          aria-labelledby="monthly-forecast-tab-pane"
+                          aria-labelledby="ajuba-forecast-tab-pane"
                         >
-                          <div class="card card-warning card-custom">
-                            <div class="card-body p-5">
-                              <div class="row align-items-center">
-                                <div class="col-md-12 text-center">
-                                  <h1 class="text-success">30</h1>
-                                  <h4>Your Forecast Rank</h4>
-                                </div>
+                          <div class="row align-items-center">
+                            <div class="col-md-12 text-center">
+                              <div class="p-3">
+                                <h1 class="text-success pb-3">52</h1>
+                                <h4 class="pb-3">Your Rank</h4>
                               </div>
                             </div>
                           </div>
@@ -932,8 +796,8 @@
     <script>
       $(function () {
         $(".dial").knob({
-          height: 150,
-          width: 150,
+          height: 160,
+          width: 160,
         });
       });
     </script>
